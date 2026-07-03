@@ -101,8 +101,5 @@ Information Security Graduate
 
 University of Hail
 
-LinkedIn:
-https://www.linkedin.com/in/shujun-alsaif
-
-GitHub:
-https://github.com/shjoonfahad
+- 💼 LinkedIn: https://www.linkedin.com/in/shujun-alsaif
+- 💻 GitHub: https://github.com/shjoonfahad
