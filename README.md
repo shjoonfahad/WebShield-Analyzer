@@ -1,72 +1,108 @@
-# WebShield Analyzer (Django Starter)
+# 🛡️ WebShield Analyzer
 
-Student-level Django starter for:
-- Landing page
-- Login / Register
-- Profile
-- User dashboard and scan workflow
-- Admin analytics + governance + operations
-- OWASP ZAP integration
+A web-based vulnerability assessment platform developed as a graduation project at the University of Hail.
 
-## 1) Setup
+WebShield Analyzer integrates with **OWASP ZAP** to automate web application security scanning, visualize security findings, and help users identify and understand vulnerabilities through an interactive dashboard.
+
+---
+
+## ✨ Features
+
+- 🔐 User Authentication & Authorization
+- 🌐 Web Application Vulnerability Scanning
+- ⚡ OWASP ZAP Integration
+- 📊 Security Dashboard
+- 📈 Scan History & Analytics
+- 🎯 Severity Classification (High, Medium, Low, Info)
+- 👤 User Profile Management
+- 🛠️ System Operations Dashboard
+- 📋 Detailed Vulnerability Reports
+
+---
+
+## 🖥️ Screenshots
+
+### Landing Page
+
+![Landing Page](images/landing-page.jpg)
+
+### Dashboard
+
+![Dashboard](images/dashboard.jpg)
+
+### Start Scan
+
+![Start Scan](images/start-scan.jpg)
+
+### Scan Results
+
+![Scan Results](images/scan-results.jpg)
+
+### System Operations
+
+![System Operations](images/system-operations.jpg)
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Django
+- SQLite
+- HTML
+- CSS
+- JavaScript
+- OWASP ZAP
+- Chart.js
+
+---
+
+## 🚀 Installation
+
 ```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
+git clone https://github.com/shjoonfahad/WebShield-Analyzer.git
+
+cd WebShield-Analyzer
 
 pip install -r requirements.txt
-```
 
-## 2) Configure environment
-Copy `.env.example` to `.env` and adjust values:
-```bash
-cp .env.example .env
-```
-
-Important values:
-- `SECRET_KEY`
-- `DEBUG`
-- `ALLOWED_HOSTS`
-- `ZAP_BASE_URL`
-- `ZAP_API_KEY`
-- `ZAP_VERIFY_SSL`
-
-## 3) Run migrations
-```bash
 python manage.py migrate
-```
 
-## 4) Create bootstrap admin (one-time)
-```bash
-python manage.py bootstrap_admin
-```
-
-Optional overrides:
-```bash
-python manage.py bootstrap_admin --username admin --email admin@webshield.local --password Admin@12345 --reset-password
-```
-
-## 5) Run server
-```bash
 python manage.py runserver
 ```
-Open: http://127.0.0.1:8000/
 
-## Main routes
-- User dashboard: `http://127.0.0.1:8000/dashboard/`
-- Start scan: `http://127.0.0.1:8000/scan/new/`
-- All scans: `http://127.0.0.1:8000/scans/`
+---
 
-Admin (staff):
-- Analytics: `http://127.0.0.1:8000/admin-analytics/`
-- User management: `http://127.0.0.1:8000/admin-users/`
-- Governance: `http://127.0.0.1:8000/admin-governance/`
-- System ops: `http://127.0.0.1:8000/admin-system/`
-- Django admin: `http://127.0.0.1:8000/admin/`
+## 🎯 Project Objectives
 
-## Notes
-- Tailwind, Alpine.js, and Chart.js are CDN-based.
-- ZAP API endpoints used:
-  - `/JSON/ascan/action/scan/`
-  - `/JSON/ascan/view/status/`
-  - `/JSON/core/view/alerts/`
+- Automate web vulnerability assessment.
+- Integrate OWASP ZAP into a web application.
+- Provide an easy-to-use interface for vulnerability scanning.
+- Help users understand and prioritize security findings.
+
+---
+
+## 🔮 Future Improvements
+
+- PDF Report Generation
+- Email Notifications
+- Scan Scheduling
+- Multi-user Collaboration
+- Enhanced Analytics
+- Additional Security Integrations
+
+---
+
+## 👩‍💻 Author
+
+**Shujun Alsaif**
+
+Information Security Graduate
+
+University of Hail
+
+LinkedIn:
+https://www.linkedin.com/in/shujun-alsaif
+
+GitHub:
+https://github.com/shjoonfahad
