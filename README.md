@@ -20,7 +20,7 @@ WebShield Analyzer integrates with **OWASP ZAP** to automate web application sec
 
 ---
 
-## 🖥️ Screenshots
+## 🖼️ Screenshots
 
 ### Landing Page
 
